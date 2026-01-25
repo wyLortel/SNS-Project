@@ -1,0 +1,29 @@
+//리액트 앱에서 리액트 앱을 구동하는 그런 코드들을 위한 타입스크립트 옵션 파일
+//브라우저 환경에서만 동작하는 코드들의 타입스크립트 옵션을 설정하는 파일
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    // "noUnusedLocals": true, 이것도 사용하지 않는 지역변수잇을때 오류
+    // "noUnusedParameters": true, 이건 아름답게 사용되지않는 매개변수가 있을대 오류
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}

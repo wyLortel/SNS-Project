@@ -23,7 +23,11 @@
     // "noUnusedParameters": true, 이건 아름답게 사용되지않는 매개변수가 있을대 오류
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src"]
 }
